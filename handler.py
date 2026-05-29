@@ -18,5 +18,6 @@ def handler(job):
         }
     except Exception as e:
         return { "error": str(e) }
+        
 
 runpod.serverless.start({ "handler": handler })
